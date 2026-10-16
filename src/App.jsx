@@ -8,7 +8,6 @@ import Internship from './components/Internship';
 import Projects from './components/Projects';
 import ProjectDetail from './components/ProjectDetail';
 import Certificates from './components/Certificates';
-import Resume from './components/Resume';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { projectsData } from './data/projectsData';
@@ -55,11 +54,10 @@ export default function App() {
       'home',
       'summary',
       'skills',
-      'education',
       'internship',
       'projects',
       'certificates',
-      'resume',
+      'education',
       'contact'
     ];
 
@@ -143,13 +141,12 @@ export default function App() {
             />
             <Summary />
             <Skills />
-            <Education />
             <Internship />
             <Projects
               onSelectProject={handleSelectProject}
             />
             <Certificates />
-            <Resume />
+            <Education />
             <Contact />
           </>
         )}

@@ -11,11 +11,10 @@ export default function Footer({ onNavigate }) {
     { label: 'Home', id: 'home' },
     { label: 'Summary', id: 'summary' },
     { label: 'Skills', id: 'skills' },
-    { label: 'Education', id: 'education' },
     { label: 'Internship', id: 'internship' },
     { label: 'Projects', id: 'projects' },
     { label: 'Certificates', id: 'certificates' },
-    { label: 'Resume', id: 'resume' },
+    { label: 'Education', id: 'education' },
     { label: 'Contact', id: 'contact' }
   ];
 

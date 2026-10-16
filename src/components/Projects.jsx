@@ -12,7 +12,7 @@ export default function Projects({ onSelectProject }) {
           <span className="section-tag">Featured Portfolio</span>
           <h2 className="section-title">Projects</h2>
           <p className="section-subtitle">
-            Applied Machine Learning regression model and intelligent academic assistant architecture.
+            Applied Machine Learning predictive models and intelligent software architectures.
           </p>
         </div>
 
@@ -21,6 +21,7 @@ export default function Projects({ onSelectProject }) {
             const hasGithub = Boolean(project.githubUrl && project.githubUrl.trim().length > 0);
             const hasLiveDemo = Boolean(project.liveDemoUrl && project.liveDemoUrl.trim().length > 0);
             const isLaptop = project.id === 'laptop-price-prediction';
+            const isChurn = project.id === 'customer-churn-prediction';
 
             return (
               <div key={project.id} className="project-card">
@@ -64,6 +65,48 @@ export default function Projects({ onSelectProject }) {
                             <span>Label Encoding</span>
                             <span>Scikit-learn</span>
                             <span>Outlier Tuning</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ) : isChurn ? (
+                    /* Customer Churn Prediction Visual Illustration */
+                    <div className="ml-visual-card">
+                      <div className="visual-top-bar">
+                        <div className="visual-window-dots">
+                          <span className="dot red" />
+                          <span className="dot yellow" />
+                          <span className="dot green" />
+                        </div>
+                        <span className="visual-filename">customer_churn_prediction.py</span>
+                        <span className="visual-metric-pill">ROC-AUC: 0.89</span>
+                      </div>
+
+                      <div className="visual-body">
+                        <div className="visual-input-specs">
+                          <span className="spec-chip">Tenure: 24 Mos</span>
+                          <span className="spec-chip">Contract: One-Year</span>
+                          <span className="spec-chip">Charges: ₹650/mo</span>
+                          <span className="spec-chip">Support: Active</span>
+                        </div>
+
+                        <div className="visual-result-banner">
+                          <div className="result-indicator">
+                            <span className="result-label">Predicted Status</span>
+                            <span className="result-val">Retained (91%)</span>
+                          </div>
+                          <div className="result-metrics">
+                            <span>Accuracy: 86%</span>
+                            <span>Split: 80/20</span>
+                          </div>
+                        </div>
+
+                        <div className="visual-features-bar">
+                          <span className="features-label">Classification:</span>
+                          <div className="features-mini-tags">
+                            <span>Logistic Regression</span>
+                            <span>Random Forest</span>
+                            <span>Scikit-learn</span>
                           </div>
                         </div>
                       </div>

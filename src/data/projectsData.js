@@ -180,5 +180,89 @@ export const projectsData = [
       "Distinguishing user-facing production readiness from prototype stage features through modular system design.",
       "The value of user-centric AI applications in enhancing student productivity and interview confidence."
     ]
+  },
+  {
+    id: "customer-churn-prediction",
+    title: "Customer Churn Prediction",
+    slug: "customer-churn-prediction",
+    subtitle: "Machine Learning Classification & Retention Analysis",
+    shortDescription:
+      "A machine learning project that analyzes customer data to predict whether customers are likely to continue using a service or leave.",
+    image: "/assets/projects/customer-churn-prediction.png",
+    technologies: ["Python", "Pandas", "Scikit-learn", "Machine Learning"],
+    githubUrl: null,
+    liveDemoUrl: null,
+    badge: "Machine Learning",
+    status: "Completed Project",
+    overview:
+      "The Customer Churn Prediction project is a machine learning classification system developed to analyze customer usage metrics, subscription tiers, and engagement patterns to predict whether customers are likely to continue using a service or leave. By identifying at-risk accounts before termination, this predictive model empowers organizations to optimize proactive retention workflows with data-driven confidence.",
+    problemStatement:
+      "Customer attrition directly impacts business longevity and revenue stability, with customer acquisition often demanding far greater resources than customer retention. Service providers need automated mechanisms to detect early behavioral warnings of churn buried within diverse account attributes. The challenge was to clean customer usage datasets, engineer high-signal predictive features, and train a supervised classification model capable of distinguishing between churning and loyal accounts with reliable precision.",
+    features: [
+      {
+        title: "Customer Behavioral Profiling",
+        status: "Implemented",
+        description:
+          "Examines contract duration, service usage intensity, payment modes, and monthly charges to uncover key factors influencing customer attrition."
+      },
+      {
+        title: "Data Cleaning & Preprocessing Pipeline",
+        status: "Implemented",
+        description:
+          "Handles missing values, encodes categorical attributes using label and one-hot encoding, and normalizes numeric ranges for stable training convergence."
+      },
+      {
+        title: "Supervised Classification Modeling",
+        status: "Implemented",
+        description:
+          "Trained and evaluated classification estimators including Logistic Regression and Decision Trees using Scikit-learn to identify optimal decision boundaries."
+      },
+      {
+        title: "Churn Propensity Scoring",
+        status: "Implemented",
+        description:
+          "Calculates probabilistic churn risk scores per customer, enabling businesses to prioritize customer success outreach based on calculated attrition risk."
+      },
+      {
+        title: "Evaluation & Confusion Matrix Analysis",
+        status: "Implemented",
+        description:
+          "Validates predictive performance across Accuracy, Precision, Recall, and ROC-AUC metrics to ensure balanced detection on unseen test splits."
+      }
+    ],
+    technologiesUsed: [
+      { name: "Python", category: "Core Language", detail: "Primary programming language for data preprocessing, algorithmic pipelines, and modeling" },
+      { name: "Pandas", category: "Data Manipulation", detail: "Tabular data wrangling, missing value cleaning, filtering, and aggregation" },
+      { name: "Scikit-learn", category: "Machine Learning", detail: "Preprocessing transformers, classification estimators, cross-validation, and metrics" },
+      { name: "Machine Learning", category: "Domain", detail: "Supervised binary classification, decision boundaries, and churn risk evaluation" }
+    ],
+    howItWorks: [
+      {
+        step: "1. Dataset Loading & Inspection",
+        detail: "Ingested customer profile datasets containing account tenure, service usage, payment methods, and historical churn outcomes."
+      },
+      {
+        step: "2. Exploratory Data Analysis & Cleaning",
+        detail: "Analyzed churn distribution across contract types, cleaned missing values, and encoded categorical attributes."
+      },
+      {
+        step: "3. Feature Engineering & Scaling",
+        detail: "Selected high-impact features such as tenure and monthly charges, standardizing numerical scales for model stability."
+      },
+      {
+        step: "4. Model Training & Validation",
+        detail: "Split data into training and testing sets to train Scikit-learn classifiers and tune hyperparameters."
+      },
+      {
+        step: "5. Prediction & Retention Insights",
+        detail: "Generated classification predictions and churn risk scores to deliver actionable retention intelligence."
+      }
+    ],
+    whatILearned: [
+      "Implementing end-to-end classification pipelines from raw customer records using Pandas and Scikit-learn.",
+      "Evaluating classification metrics like Precision, Recall, and ROC-AUC for imbalanced churn datasets.",
+      "The practical importance of feature selection in identifying primary drivers of customer attrition.",
+      "Translating statistical model predictions into practical business retention strategies."
+    ]
   }
 ];

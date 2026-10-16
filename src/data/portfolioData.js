@@ -110,19 +110,19 @@ export const skillsData = [
 export const educationData = [
   {
     degree: "B.Sc. Computer Science",
-    institution: "Government College for Women (Autonomous), Kumbakonam",
+    institution: "Government College for Women (Autonomous)",
     university: "Bharathidasan University",
     period: "2023–2026",
-    score: "84%",
+    score: "85%",
     scoreType: "Percentage",
     highlights: [
       "Core coursework in Data Structures, Algorithms, Database Management, and Object-Oriented Programming",
       "Academic exploration in Machine Learning and Python application development",
-      "Consistent academic performance with 84% aggregate"
+      "Consistent academic performance with 85% aggregate"
     ]
   },
   {
-    degree: "Higher Secondary — Computer Science",
+    degree: "Higher Secondary (12th)",
     institution: "Al-Ameen Matric Higher Secondary School, Kumbakonam",
     university: null,
     period: "2023",
@@ -131,6 +131,17 @@ export const educationData = [
     highlights: [
       "Specialized stream in Computer Science and Mathematics",
       "Foundation in computational logic and programming principles"
+    ]
+  },
+  {
+    degree: "SSLC (10th)",
+    institution: "Al-Ameen Matric Higher Secondary School, Kumbakonam",
+    university: null,
+    period: "2021",
+    score: "Pass",
+    scoreType: "Status",
+    highlights: [
+      "Secondary school education with foundational studies in Science and Mathematics"
     ]
   }
 ];

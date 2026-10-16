@@ -1,9 +1,9 @@
 /* Projects Grid & Cards */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  max-width: 1040px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
@@ -315,9 +315,16 @@
   border-top: 1px solid var(--border-subtle);
 }
 
-@media (max-width: 880px) {
+@media (max-width: 1040px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 720px) {
   .projects-grid {
     grid-template-columns: 1fr;
-    gap: 1.75rem;
+    gap: 1.5rem;
   }
 }

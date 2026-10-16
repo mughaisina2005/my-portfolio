@@ -19,6 +19,7 @@ export default function ProjectDetail({ project, onBack }) {
   const hasGithub = Boolean(project.githubUrl && project.githubUrl.trim().length > 0);
   const hasLiveDemo = Boolean(project.liveDemoUrl && project.liveDemoUrl.trim().length > 0);
   const isLaptop = project.id === 'laptop-price-prediction';
+  const isChurn = project.id === 'customer-churn-prediction';
 
   return (
     <article className="project-detail-page container">
@@ -78,6 +79,49 @@ export default function ProjectDetail({ project, onBack }) {
                     <span>Categorical Encoding</span>
                     <span>Linear &amp; Random Forest Regression</span>
                     <span>Residual Analysis</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ) : isChurn ? (
+            <div className="detail-visual-box">
+              <div className="visual-top-bar">
+                <div className="visual-window-dots">
+                  <span className="dot red" />
+                  <span className="dot yellow" />
+                  <span className="dot green" />
+                </div>
+                <span className="visual-filename">customer_churn_pipeline.py</span>
+                <span className="visual-metric-pill">Accuracy: 86% | AUC: 0.89</span>
+              </div>
+
+              <div className="visual-body">
+                <div className="visual-input-specs">
+                  <span className="spec-chip">Account: Subscription Service</span>
+                  <span className="spec-chip">Tenure: 18 Months</span>
+                  <span className="spec-chip">Contract: One-Year</span>
+                  <span className="spec-chip">Payment: Bank Transfer</span>
+                  <span className="spec-chip">Monthly Charges: ₹650</span>
+                </div>
+
+                <div className="visual-result-banner">
+                  <div className="result-indicator">
+                    <span className="result-label">Churn Risk Evaluation</span>
+                    <span className="result-val">Low Risk — Retained (93%)</span>
+                  </div>
+                  <div className="result-metrics">
+                    <span>Precision: 0.84 / Recall: 0.81</span>
+                    <span>Test Split: 20% (Unseen Data)</span>
+                  </div>
+                </div>
+
+                <div className="visual-features-bar">
+                  <span className="features-label">Core Pipeline Stages:</span>
+                  <div className="features-mini-tags">
+                    <span>Data Wrangling with Pandas</span>
+                    <span>Categorical One-Hot Encoding</span>
+                    <span>Supervised Classification (Scikit-learn)</span>
+                    <span>Confusion Matrix Validation</span>
                   </div>
                 </div>
               </div>
